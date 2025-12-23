@@ -17,7 +17,7 @@ const projects = [
     tech: ["ReactJS", "HTML", "CSS", "EmailJS"],
     desc: "Personal developer portfolio website.",
     img: "/img2.png",
-    repo: "https://github.com/yourusername/myportfolio",
+    repo: "https://github.com/sk-kashan/Portfolio",
   },
   {
     id: 3,
