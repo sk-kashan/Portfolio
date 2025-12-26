@@ -1,44 +1,6 @@
 /* =========================
-   GLOBAL RESET & BASE
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #1a0f0b; /* dark warm background */
-  color: #ffffff;
-}
-
-/* =========================
    NAVBAR
 ========================= */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  backdrop-filter: blur(14px);
-  z-index: 1000;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #ff7c2b;
-}
-
 /* Nav links desktop */
 .nav-links {
   display: flex;
@@ -1059,19 +1021,6 @@ section h2 {
           drop-shadow(0 0 25px #ff7300)
           drop-shadow(0 0 40px #b65302);
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  backdrop-filter: blur(14px);
-  z-index: 1000;
-}
-
 /* TABLET */
 @media (max-width: 1024px) {
   .navbar {

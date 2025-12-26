@@ -27,7 +27,7 @@ function Footer() {
         <div className="footer-social">
           <h4>Connect</h4>
           <div className="socials">
-            <a href="#" aria-label="GitHub">
+            <a href="https://github.com/sk-kashan" aria-label="GitHub">
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a href="#" aria-label="LinkedIn">
