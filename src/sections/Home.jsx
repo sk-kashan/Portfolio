@@ -80,7 +80,7 @@ function Home() {
             <h2>Contact Me</h2>
 
             <div className="contact-info">
-              <p><FontAwesomeIcon className="icon" icon={faEnvelope} /> : <span>thedevdiary08@gmail.com</span></p>
+              <p><FontAwesomeIcon className="icon" icon={faEnvelope} /> : <span>sheikhkashanqadir@gmail.com</span></p>
               <p><FontAwesomeIcon className="icon" icon={faPhone} /> : <span>+923208208115</span></p>
               <p><FontAwesomeIcon className="icon" icon={faGithub} /> : <span>github.com/sk-kashan</span></p>
             </div>
