@@ -30,7 +30,7 @@ function Footer() {
             <a href="https://github.com/sk-kashan" aria-label="GitHub">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="www.linkedin.com/in/sheikh-kashan-1a72043a3" aria-label="LinkedIn">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a href="#" aria-label="Twitter">
