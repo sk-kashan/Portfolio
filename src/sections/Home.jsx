@@ -19,29 +19,39 @@ function Home() {
 
   const [openModal, setOpenModal] = useState(false);
 
-  useEffect(() => {
-    const speed = deleting ? 50 : 120;
-    const timeout = setTimeout(() => {
-      const currentTitle = titles[titleIndex];
+useEffect(() => {
+  const currentTitle = titles[titleIndex];
 
-      if (!deleting) {
-        setText(currentTitle.substring(0, charIndex + 1));
-        setCharIndex(charIndex + 1);
-        if (charIndex + 1 === currentTitle.length) {
-          setDeleting(true);
-        }
-      } else {
-        setText(currentTitle.substring(0, charIndex - 1));
-        setCharIndex(charIndex - 1);
-        if (charIndex - 1 === 0) {
-          setDeleting(false);
-          setTitleIndex((prev) => (prev + 1) % titles.length);
-        }
-      }
-    }, speed);
+  let timeout;
 
-    return () => clearTimeout(timeout);
-  }, [charIndex, deleting, titleIndex]);
+  if (!deleting && charIndex < currentTitle.length) {
+    
+    timeout = setTimeout(() => {
+      setText(currentTitle.substring(0, charIndex + 1));
+      setCharIndex((prev) => prev + 1);
+    }, 120);
+  } 
+  else if (!deleting && charIndex === currentTitle.length) {
+  
+    timeout = setTimeout(() => {
+      setDeleting(true);
+    }, 1200); 
+  } 
+  else if (deleting && charIndex > 0) {
+    
+    timeout = setTimeout(() => {
+      setText(currentTitle.substring(0, charIndex - 1));
+      setCharIndex((prev) => prev - 1);
+    }, 60);
+  } 
+  else if (deleting && charIndex === 0) {
+    
+    setDeleting(false);
+    setTitleIndex((prev) => (prev + 1) % titles.length);
+  }
+
+  return () => clearTimeout(timeout);
+}, [charIndex, deleting, titleIndex]);
 
   return (
     <>
