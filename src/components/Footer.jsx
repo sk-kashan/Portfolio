@@ -33,7 +33,7 @@ function Footer() {
             <a href="https://www.linkedin.com/in/sheikh-kashan-1a72043a3/" aria-label="LinkedIn">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="#" aria-label="Twitter">
+            <a href="https://x.com/" aria-label="Twitter">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </div>
