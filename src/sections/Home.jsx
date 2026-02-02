@@ -3,6 +3,12 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import React, { useState, useEffect } from "react";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+  const titles = [
+    "Full-stack Developer",
+    "Software Engineer",
+    "Database Administrator",
+    "Backend Developer",
+  ];
 function Home() {
   const titles = [
     "Full-stack Developer",
