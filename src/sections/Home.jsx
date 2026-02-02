@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 function Home() {
   const titles = [
