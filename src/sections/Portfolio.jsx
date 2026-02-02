@@ -43,7 +43,7 @@ const projects = [
     img: "/img5.png",
     repo: "https://github.com/sk-kashan/weather-app",
   },
-    {
+  {
     id: 6,
     title: "Goblin's Gaunlet",
     tech: ["HTML5", "CSS3", "Vanilla Javascript"],
