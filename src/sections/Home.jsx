@@ -51,7 +51,7 @@ useEffect(() => {
   }
 
   return () => clearTimeout(timeout);
-}, [charIndex, deleting, titleIndex, titles]);
+}, [charIndex, deleting, titleIndex]);
 
   return (
     <>
