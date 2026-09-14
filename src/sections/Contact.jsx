@@ -29,10 +29,12 @@ function Contact() {
   const validate = () => {
     const newErrors = {};
 
+    // Validate name
     if (!/^[a-zA-Z\s]{2,}$/.test(formData.name.trim())) {
       newErrors.name = "Enter a valid name.";
     }
 
+    // Validate email
     if (
       !/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(
         formData.email.trim()
@@ -41,6 +43,7 @@ function Contact() {
       newErrors.email = "Enter a valid email.";
     }
 
+    // Validate message
     if (formData.message.trim().length < 10) {
       newErrors.message = "Message must be at least 10 characters.";
     }
@@ -59,6 +62,7 @@ function Contact() {
       return;
     }
 
+    // EmailJS configuration
     const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
     const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
