@@ -56,7 +56,15 @@ useEffect(() => {
   return (
     <>
       <section id="home" className="hero">
+        <div className="hero-corner hero-corner-left" aria-hidden="true">SK / 01</div>
+        <div className="hero-corner hero-corner-right" aria-hidden="true">PORTFOLIO 2025</div>
         <div className="hero-content">
+          <div className="hero-eyebrow">
+            <span className="hero-eyebrow-line" />
+            <span>INDEPENDENT DIGITAL BUILDER</span>
+            <span className="hero-eyebrow-line" />
+          </div>
+
           <h1>
             Hi, I'm <span className="name">S.M.Kashan</span> <br />
             <span className="typing">{text}</span>
@@ -72,6 +80,14 @@ useEffect(() => {
             <a className="secondary-btn" href="#portfolio">
               Portfolio
             </a>
+          </div>
+
+          <div className="hero-rail" aria-hidden="true">
+            <span>FRONTEND</span>
+            <i />
+            <span>BACKEND</span>
+            <i />
+            <span>PRODUCT THINKING</span>
           </div>
         </div>
       </section>

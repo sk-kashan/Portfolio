@@ -7,11 +7,24 @@ function Footer() {
       {/* glow divider */}
       <div className="footer-glow-line" />
 
+      <div className="footer-cta">
+        <div>
+          <span className="footer-cta-kicker">HAVE A PROJECT IN MIND?</span>
+          <h2>Let&apos;s make something <em>remarkable.</em></h2>
+        </div>
+        <a className="footer-cta-link" href="#contact" aria-label="Start a project conversation">
+          <span>Start a conversation</span>
+          <span className="footer-cta-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
       <div className="footer-content">
         {/* Brand */}
         <div className="footer-brand">
+          <span className="footer-kicker">INDEPENDENT DEVELOPER / 01</span>
           <h3>S.M. Kashan</h3>
           <p>Building premium web experiences with passion & precision.</p>
+          <div className="footer-availability"><i /> Open to selected projects</div>
         </div>
 
         {/* Links */}
@@ -38,6 +51,11 @@ function Footer() {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className="footer-bottom-line">
+        <span>CRAFTED WITH INTENT</span>
+        <span>SK / 2025</span>
       </div>
 
       <p className="footer-copy">

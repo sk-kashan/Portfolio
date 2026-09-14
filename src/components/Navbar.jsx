@@ -1,22 +1,27 @@
 import React, { useState } from "react";
-import logo from "../assets/logo2.png"; // <-- Replace with your logo path
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      {/* Logo Image */}
-      <div className="logo">
-        <img src={logo} alt="S.M. Kashan Logo" className="logo-img" />
+      <div className="brand-group">
+        <div className="logo" aria-label="SK brand logo">
+          SK
+        </div>
+        <span className="brand-caption">FULL-STACK / DIGITAL</span>
       </div>
 
-      {/* Hamburger */}
-      <div className={`hamburger ${open ? "toggle" : ""}`} onClick={() => setOpen(!open)}>
+      <button
+        className={`hamburger ${open ? "toggle" : ""}`}
+        aria-label="Toggle navigation"
+        aria-expanded={open}
+        onClick={() => setOpen(!open)}
+      >
         <div></div>
         <div></div>
         <div></div>
-      </div>
+      </button>
 
       {/* Nav Links */}
       <div className={`nav-links ${open ? "active" : ""}`}>
