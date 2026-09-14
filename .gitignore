@@ -12,6 +12,9 @@
 /build
 
 # misc
+.env
+.env.local
+.env.production
 .DS_Store
 .env.local
 .env.development.local
@@ -84,3 +87,4 @@ pids
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+ 
