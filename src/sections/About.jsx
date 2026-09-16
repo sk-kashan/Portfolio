@@ -10,7 +10,6 @@ function About() {
       </div>
 
       <div className="about-wrapper">
-        {/* LEFT CONTENT */}
         <div className="about-text neon-card">
           <div className="about-panel-topline">
             <span className="status-dot" />
@@ -19,6 +18,11 @@ function About() {
           </div>
 
           <h3>Who I Am</h3>
+
+          <p className="about-lead">
+            I turn curiosity into thoughtful digital experiences, one refined
+            interface at a time.
+          </p>
 
           <p>
             I’m <span className="highlight">S.M. Kashan</span>, an aspiring
@@ -50,7 +54,6 @@ function About() {
           </div>
         </div>
 
-        {/* RIGHT STATS */}
         <div className="about-stats">
           <div className="about-stat neon-card">
             <span className="stat-index">01</span>

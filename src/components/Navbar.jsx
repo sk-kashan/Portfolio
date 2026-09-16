@@ -9,7 +9,7 @@ function Navbar() {
         <div className="logo" aria-label="SK brand logo">
           SK
         </div>
-        <span className="brand-caption">FULL-STACK / DIGITAL</span>
+        <span className="brand-caption">S.M. KASHAN</span>
       </div>
 
       <button

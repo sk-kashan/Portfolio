@@ -4,11 +4,24 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/image.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="author" content="S.M. Kashan" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="S.M. Kashan is a Karachi-based aspiring full-stack developer building clean, responsive web experiences with React, Node.js, and modern UI design."
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="S.M. Kashan Portfolio" />
+    <meta property="og:title" content="S.M. Kashan | Full-Stack Developer Portfolio" />
+    <meta property="og:description" content="Explore the portfolio, skills, services, and selected projects of S.M. Kashan, an aspiring full-stack developer from Karachi." />
+    <meta property="og:image" content="%PUBLIC_URL%/image.png" />
+    <meta property="og:image:alt" content="S.M. Kashan developer portfolio" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="S.M. Kashan | Full-Stack Developer Portfolio" />
+    <meta name="twitter:description" content="Clean, responsive web experiences built with React, Node.js, and modern UI design." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/image.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/image.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,7 +37,25 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Kashan's Portfolio</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "S.M. Kashan",
+        "jobTitle": "Aspiring Full-Stack Developer",
+        "description": "Aspiring full-stack developer building clean, responsive web experiences with React, Node.js, and modern UI design.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Karachi",
+          "addressCountry": "PK"
+        },
+        "sameAs": [
+          "https://github.com/sk-kashan",
+          "https://www.linkedin.com/in/sheikh-kashan-1a72043a3/"
+        ]
+      }
+    </script>
+    <title>S.M. Kashan | Full-Stack Developer Portfolio</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
