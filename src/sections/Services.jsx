@@ -46,13 +46,18 @@ function Services() {
      
 
       <section id="services" className="services">
-        <h2>Services</h2>
+        <div className="services-heading">
+          <span className="section-kicker">03 / WHAT I BUILD</span>
+          <h2>Services</h2>
+          
+        </div>
 
         {/* ===== DESKTOP ROW 1 ===== */}
         <div className="service-row">
           <div className="service-sliding">
             {desktopRow1.concat(desktopRow1).map((card, i) => (
               <div key={i} className="service-card neon">
+                <span className="service-number">{String((i % desktopRow1.length) + 1).padStart(2, "0")}</span>
                 <div className="service-icon">
                   <FontAwesomeIcon icon={card.icon} />
                 </div>
@@ -67,6 +72,7 @@ function Services() {
           <div className="service-sliding">
             {desktopRow2.concat(desktopRow2).map((card, i) => (
               <div key={i} className="service-card neon">
+                <span className="service-number">{String((i % desktopRow2.length) + 5).padStart(2, "0")}</span>
                 <div className="service-icon">
                   <FontAwesomeIcon icon={card.icon} />
                 </div>
@@ -86,6 +92,7 @@ function Services() {
     >
       {mobileCards.map((card, i) => (
         <div key={i} className="service-mobile-card neon">
+          <span className="service-number">{String(i + 1).padStart(2, "0")}</span>
           <div className="service-icon">
             <FontAwesomeIcon icon={card.icon} />
           </div>

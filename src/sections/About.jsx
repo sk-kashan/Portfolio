@@ -19,11 +19,6 @@ function About() {
 
           <h3>Who I Am</h3>
 
-          <p className="about-lead">
-            I turn curiosity into thoughtful digital experiences, one refined
-            interface at a time.
-          </p>
-
           <p>
             I’m <span className="highlight">S.M. Kashan</span>, an aspiring
             <span className="highlight"> Full-Stack Developer</span> with a
